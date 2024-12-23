@@ -1,0 +1,179 @@
+{
+    "authors": [
+        {
+            "id": 1,
+            "nombre": "Rick Riordan",
+            "biografia": "Rick Riordan es un escritor estadounidense, conocido principalmente por sus series de libros de fantasia para jovenes. Nacio el 5 de junio de 1964 en San Antonio, Texas. Antes de dedicarse a la escritura, Riordan fue maestro de literatura y escritura en secundaria, lo que le permitio desarrollar un estilo accesible y entretenido para los jovenes lectores."
+        },
+        {
+            "id": 2,
+            "nombre": "Cassandra Clare",
+            "biografia": "Cassandra Clare (nacida el 27 de julio de 1973 en Teheran, Iran) es una autora estadounidense, conocida principalmente por su serie de fantasia Cazadores de sombras (The Mortal Instruments). Crecio en diferentes partes del mundo debido al trabajo de sus padres, lo que le permitio tener una vision cosmopolita de la vida. Se traslado a los Estados Unidos a una edad temprana y mas tarde se mudo a Los Angeles, donde comenzo su carrera literaria."
+        },
+        {
+            "id": 3,
+            "nombre": "James Dashner",
+            "biografia": "James Dashner (nacido el 26 de noviembre de 1972 en Austell, Georgia, EE.UU.) es un autor estadounidense, conocido principalmente por su serie de ciencia ficción y distopía \"El Corredor del Laberinto\" (The Maze Runner). La saga, que incluye varios libros y ha sido adaptada al cine, catapultó a Dashner a la fama internacional."
+        }
+    ],
+    "genres": [
+        {
+            "id": 1,
+            "nombre": "Aventura"
+        },
+        {
+            "id": 2,
+            "nombre": "Accion"
+        },
+        {
+            "id": 3,
+            "nombre": "Novela"
+        },
+        {
+            "id": 4,
+            "nombre": "Comedia"
+        },
+        {
+            "id": 5,
+            "nombre": "Drama"
+        },
+        {
+            "id": 6,
+            "nombre": "Romance"
+        }
+    ],
+    "books": [
+        {
+            "id": 1,
+            "titulo": "Percy Jackson y el ladron del rayo",
+            "publicacion": 2005,
+            "authorId": 1,
+            "genreId": 1
+        },
+        {
+            "id": 2,
+            "titulo": "Percy Jackson y el mar de los monstruos",
+            "publicacion": 2006,
+            "authorId": 1,
+            "genreId": 1
+        },
+        {
+            "id": 3,
+            "titulo": "Percy Jackson y la maldicion del titan",
+            "publicacion": 2007,
+            "authorId": 1,
+            "genreId": 1
+        },
+        {
+            "id": 4,
+            "titulo": "Percy Jackson y la batalla del laberinto",
+            "publicacion": 2008,
+            "authorId": 1,
+            "genreId": 1
+        },
+        {
+            "id": 5,
+            "titulo": "Percy Jackson y el Ultimo heroe del Olimpo",
+            "publicacion": 2009,
+            "authorId": 1,
+            "genreId": 1
+        },
+        {
+            "id": 6,
+            "titulo": "Ciudad de hueso",
+            "publicacion": 2007,
+            "authorId": 2,
+            "genreId": 6
+        },
+        {
+            "id": 7,
+            "titulo": "Ciudad de ceniza",
+            "publicacion": 2008,
+            "authorId": 2,
+            "genreId": 6
+        },
+        {
+            "id": 8,
+            "titulo": "Ciudad de cristal",
+            "publicacion": 2009,
+            "authorId": 2,
+            "genreId": 6
+        },
+        {
+            "id": 9,
+            "titulo": "Ciudad de los angeles caidos",
+            "publicacion": 2011,
+            "authorId": 2,
+            "genreId": 6
+        },
+        {
+            "id": 10,
+            "titulo": "Ciudad de las almas perdidas",
+            "publicacion": 2012,
+            "authorId": 2,
+            "genreId": 6
+        },
+        {
+            "id": 11,
+            "titulo": "Ciudad del fuego celestial",
+            "publicacion": 2014,
+            "authorId": 2,
+            "genreId": 6
+        },
+        {
+            "id": 12,
+            "titulo": "El Corredor del Laberinto",
+            "publicacion": 2009,
+            "authorId": 3,
+            "genreId": 2
+        },
+        {
+            "id": 13,
+            "titulo": "Las Pruebas",
+            "publicacion": 2010,
+            "authorId": 3,
+            "genreId": 2
+        },
+        {
+            "id": 14,
+            "titulo": "La Cura Mortal",
+            "publicacion": 2011,
+            "authorId": 3,
+            "genreId": 2
+        },
+        {
+            "id": 15,
+            "titulo": "El Destello",
+            "publicacion": 2012,
+            "authorId": 3,
+            "genreId": 2
+        },
+        {
+            "id": 16,
+            "titulo": "La Plaga",
+            "publicacion": 2016,
+            "authorId": 3,
+            "genreId": 2
+        }
+    ],
+    "reviews": [
+        {
+            "id": 1,
+            "texto": "Ciudad del fuego celestial (City of Heavenly Fire) es una conclusion epica y llena de emociones para la serie Cazadores de sombras: Los instrumentos mortales. Cassandra Clare logra un final satisfactorio, resolviendo grandes conflictos y brindando a los personajes un cierre adecuado a sus arcos narrativos, mientras mantiene el suspenso y las sorpresas hasta el ultimo momento. La batalla final contra el malvado Jonathan Morgenstern es impresionante, y las decisiones dificiles que enfrentan los protagonistas sumergen al lector en una montaña rusa emocional. El libro tambien profundiza en los temas de sacrificio, amor incondicional, y la lucha entre el bien y el mal, con un tono mas maduro que el de sus predecesores.",
+            "calificacion": 10,
+            "bookId": 11
+        },
+        {
+            "id": 2,
+            "texto": "Percy Jackson y el ladron del rayo es el primer libro de la exitosa serie Percy Jackson y los dioses del Olimpo de Rick Riordan. La historia sigue a Percy, un adolescente que descubre que es un semidios, hijo de Poseidon, el dios griego del mar. Tras ser acusado injustamente de robar el rayo de Zeus, Percy se embarca en una aventura junto con sus amigos Annabeth y Grover para encontrar el rayo perdido y evitar una guerra entre los dioses. A lo largo de su viaje, Percy se enfrenta a criaturas mitologicas, descubre secretos de su herencia y lucha con su propio destino.",
+            "calificacion": 9,
+            "bookId": 1
+        },
+        {
+            "id": 3,
+            "texto": "El Corredor del Laberinto (The Maze Runner) de James Dashner es una novela de ciencia ficción y suspense dirigida al público juvenil. La historia sigue a Thomas, un adolescente que despierta sin memoria en un extraño lugar conocido como El Área. Rodeado por un gigantesco laberinto lleno de peligrosas criaturas, Thomas se une a un grupo de chicos que también han perdido sus recuerdos y que intentan escapar del laberinto. Juntos, deben desentrañar los secretos detrás de su encierro mientras enfrentan desafíos mortales, alianzas inesperadas y una amenaza que parece ir más allá del laberinto mismo.",
+            "calificacion": 8,
+            "bookId": 12
+        }
+    ]
+}
