@@ -5,26 +5,38 @@
             <div class="form-group mb-3">
                 <label for="titulo">Titulo:</label>
                 <input type="text" name="titulo" id="titulo" v-model="book.titulo" :class="{ 'is-invalid': errors.titulo }" class="form-control" placeholder="Titulo">
+                <div v-if="errors.titulo" class="invalid-feedback">
+                    {{ errors.titulo }}
+                </div>
             </div>
             <div class="form-group mb-3">
                 <label for="publicacion">Publicación:</label>
                 <input type="number" name="publicacion" id="publicacion" v-model="book.publicacion" :class="{ 'is-invalid': errors.publicacion }" class="form-control" placeholder="Publicación">
+                <div v-if="errors.publicacion" class="invalid-feedback">
+                    {{ errors.publicacion }}
+                </div>
             </div>
             <div class="form-group mb-3">
                 <label for="authorId">Autor:</label>
-                <select name="authorId" id="authorId" v-model="book.authorId" :class="{ 'is-invalid': errors.authorId }" class="form-control">
+                <select name="authorId" id="authorId" v-model="book.authorId" :class="{ 'is-invalid': errors.authorId }" class="form-select">
                     <option v-for="author in authors" :key="author.id" :value="author.id">
                         {{ author.nombre }}
                     </option>
                 </select>
+                <div v-if="errors.authorId" class="invalid-feedback">
+                    {{ errors.authorId }}
+                </div>
             </div>
             <div class="form-group mb-3">
                 <label for="genreId">Género:</label>
-                <select name="genreId" id="genreId" v-model="book.genreId" :class="{ 'is-invalid': errors.genreId }" class="form-control">
+                <select name="genreId" id="genreId" v-model="book.genreId" :class="{ 'is-invalid': errors.genreId }" class="form-select">
                     <option v-for="genre in genres" :key="genre.id" :value="genre.id">
                         {{ genre.nombre }}
                     </option>
                 </select>
+                <div v-if="errors.genreId" class="invalid-feedback">
+                    {{ errors.genreId }}
+                </div>
             </div>
             <div class="form-group mb-3">
                 <button type="submit" class="btn btn-primary">Registrar</button>

@@ -61,7 +61,7 @@ export default {
             return this.getBaseUrl;
         },
         form() {
-            return Object.assign({}, this.author);
+            return Object.assign({}, this.genre);
         }
     }
 }

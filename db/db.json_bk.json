@@ -9,6 +9,11 @@
       "id": 2,
       "nombre": "Cassandra Clare",
       "biografia": "Cassandra Clare (nacida el 27 de julio de 1973 en Teheran, Iran) es una autora estadounidense, conocida principalmente por su serie de fantasia Cazadores de sombras (The Mortal Instruments). Crecio en diferentes partes del mundo debido al trabajo de sus padres, lo que le permitio tener una vision cosmopolita de la vida. Se traslado a los Estados Unidos a una edad temprana y mas tarde se mudo a Los Angeles, donde comenzo su carrera literaria."
+    },
+    {
+      "nombre": "JK Rowling",
+      "biografia": "JK Rowling es la autora de Harry Potter",
+      "id": 3
     }
   ],
   "genres": [
@@ -35,6 +40,10 @@
     {
       "id": 6,
       "nombre": "Romance"
+    },
+    {
+      "nombre": "Juvenil",
+      "id": 7
     }
   ],
   "books": [
@@ -43,16 +52,7 @@
       "titulo": "Percy Jackson y el ladron del rayo",
       "publicacion": 2005,
       "authorId": 1,
-      "genreId": 1,
-      "author": {
-        "id": 1,
-        "nombre": "Rick Riordan",
-        "biografia": "Rick Riordan es un escritor estadounidense, conocido principalmente por sus series de libros de fantasia para jovenes. Nacio el 5 de junio de 1964 en San Antonio, Texas. Antes de dedicarse a la escritura, Riordan fue maestro de literatura y escritura en secundaria, lo que le permitio desarrollar un estilo accesible y entretenido para los jovenes lectores."
-      },
-      "genre": {
-        "id": 2,
-        "nombre": "Accion"
-      }
+      "genreId": 1
     },
     {
       "id": 2,
@@ -123,6 +123,20 @@
       "publicacion": 2014,
       "authorId": 2,
       "genreId": 6
+    },
+    {
+      "titulo": "Harry Potter y la Piedra Filosofal",
+      "publicacion": 1998,
+      "authorId": 3,
+      "genreId": 7,
+      "id": 12
+    },
+    {
+      "titulo": "Harry Potter y la Cámara Secreta",
+      "publicacion": 1998,
+      "authorId": 3,
+      "genreId": 7,
+      "id": 13
     }
   ],
   "reviews": [

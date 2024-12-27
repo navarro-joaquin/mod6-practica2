@@ -4,7 +4,8 @@
     <router-link to="/about">About</router-link> |
     <router-link to="/author">Autores</router-link> |
     <router-link to="/genre">Géneros</router-link> |
-    <router-link to="/book">Libros</router-link>
+    <router-link to="/book">Libros</router-link> |
+    <router-link to="/review">Reseñas</router-link>
   </nav>
   <router-view/>
 </template>

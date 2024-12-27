@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import AuthorView from '../views/author/AuthorView.vue'
 import GenreView from '../views/genre/GenreView.vue'
 import BookView from '../views/book/BookView.vue'
+import ReviewView from '@/views/review/ReviewView.vue'
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     path: '/book',
     name: 'book',
     component: BookView
+  },
+  {
+    path: '/review',
+    name: 'review',
+    component: ReviewView
   },
   {
     path: '/about',
