@@ -2,7 +2,8 @@
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
-    <router-link to="/author">Author</router-link>
+    <router-link to="/author">Autores</router-link> |
+    <router-link to="/genre">Géneros</router-link>
   </nav>
   <router-view/>
 </template>
