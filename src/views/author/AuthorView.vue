@@ -7,9 +7,15 @@
     </Modal>
     <div class="card">
         <div class="card-body">
-            <h1>Lista de Autores</h1>
-            <button type="button" class="btn btn-primary mb-2" @click="showModalNuevo = true">Nuevo registro</button>
-            <input class="form-control mb-2" type="search" style="float: right;" v-model="textoSearch" @search="buscar()" placeholder="Buscar por nombre">
+            <h2>Lista de Autores</h2>
+            <div class="row">
+                <div class="col-10">
+                    <input class="form-control mb-2" type="search" style="float: right;" v-model="textoSearch" @search="buscar()" placeholder="Buscar por nombre">
+                </div>
+                <div class="col-2">
+                    <button type="button" class="btn btn-success mb-2" @click="showModalNuevo = true"><i class="bi bi-plus"></i> Nuevo registro</button>
+                </div>
+            </div>
             <table class="table table-striped">
                 <thead>
                     <tr>

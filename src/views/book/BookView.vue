@@ -7,21 +7,36 @@
     </Modal>
     <div class="card">
         <div class="card-body">
-            <h1>Lista de Libros</h1>
-            <button type="button" class="btn btn-primary mb-2" @click="showModalNuevo = true">Nuevo registro</button>
-            <input class="form-control mb-2" type="search" style="float: right;" v-model="textoSearch" @search="buscar()" placeholder="Buscar por titulo">
+            <h2>Lista de Libros</h2>
+            <div class="row">
+                <div class="col-10">
+                    <input class="form-control mb-2" type="search" style="float: right;" v-model="textoSearch" @search="buscar()" placeholder="Buscar por titulo">
+                </div>
+                <div class="col-2">
+                    <button type="button" class="btn btn-success mb-2" @click="showModalNuevo = true"><i class="bi bi-plus"></i> Nuevo registro</button>
+                </div>
+            </div>
             <div>
-                <h3>Filtros</h3>
+                <h4>Filtros</h4>
                 <form @submit.prevent="filtrar()">
-                        <div class="col-6 offset-3 mb-3">
-                            <label for="autor">Autor:</label>
-                            <select name="autor" id="autor" class="form-control" v-model="filtro.authorId">
-                                <option value="">Todos</option>
-                                <option v-for="author in authors" :key="author.id" :value="author.id">{{ author.nombre }}</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <button type="submit" class="btn btn-primary">Filtrar</button>
+                        <div class="row">
+                            <div class="col-4 offset-2 mb-3">
+                                <label for="autor">Autor:</label>
+                                <select name="autor" id="autor" class="form-select" v-model="filtro.authorId">
+                                    <option value="">Todos</option>
+                                    <option v-for="author in authors" :key="author.id" :value="author.id">{{ author.nombre }}</option>
+                                </select>
+                            </div>
+                            <div class="col-4 mb-3">
+                                <label for="genero">Genero:</label>
+                                <select name="genero" id="genero" class="form-select" v-model="filtro.genreId">
+                                    <option value="">Todos</option>
+                                    <option v-for="genre in genres" :key="genre.id" :value="genre.id">{{ genre.nombre }}</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <button type="submit" class="btn btn-warning">Filtrar</button>
+                            </div>
                         </div>
                 </form>
             </div>
@@ -71,8 +86,10 @@ export default {
             bookToEdit: null,
             books: [],
             authors: [],
+            genres: [],
             filtro: {
                 authorId: null,
+                genreId: null
             }
         }
     },
@@ -137,10 +154,24 @@ export default {
                     console.log(error);
                 })
         },
+        getGenres() {
+            const vm = this;
+            this.axios.get(this.baseUrl + '/genres')
+                .then(function (response) {
+                    // console.log(response);
+                    vm.genres = response.data
+                })
+                .catch(function (error) {
+                    console.log(error);
+                })
+        },
         filtrar() {
             this.textoFiltro = '';
             if (this.filtro.authorId) {
                 this.textoFiltro += '&authorId=' + this.filtro.authorId;
+            }
+            if (this.filtro.genreId) {
+                this.textoFiltro += '&genreId=' + this.filtro.genreId;
             }
             this.getBooks();
         }
@@ -154,6 +185,7 @@ export default {
     mounted() {
         this.getBooks();
         this.getAuthors();
+        this.getGenres();
     }
 }
 </script>
