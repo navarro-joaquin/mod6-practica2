@@ -15,6 +15,7 @@
                     <tr>
                         <th>ID</th>
                         <th>Nombre</th>
+                        <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>

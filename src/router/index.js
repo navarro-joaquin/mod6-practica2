@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AuthorView from '../views/author/AuthorView.vue'
 import GenreView from '../views/genre/GenreView.vue'
-
+import BookView from '../views/book/BookView.vue'
 
 const routes = [
   {
@@ -19,6 +19,11 @@ const routes = [
     path: '/genre',
     name: 'genre',
     component: GenreView
+  },
+  {
+    path: '/book',
+    name: 'book',
+    component: BookView
   },
   {
     path: '/about',
