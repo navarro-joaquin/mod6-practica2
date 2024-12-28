@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="../assets/logolibros.jpg">
+    <HelloWorld msg="Bienvenido a la aplicación de Catalogo de Libros"/>
   </div>
 </template>
 

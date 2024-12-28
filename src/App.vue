@@ -1,7 +1,6 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
+    <router-link to="/">Inicio</router-link> |
     <router-link to="/author">Autores</router-link> |
     <router-link to="/genre">Géneros</router-link> |
     <router-link to="/book">Libros</router-link> |
@@ -27,7 +26,8 @@ nav {
     color: #2c3e50;
 
     &.router-link-exact-active {
-      color: #42b983;
+      // color: #42b983;
+      color: #4287f5;
     }
   }
 }

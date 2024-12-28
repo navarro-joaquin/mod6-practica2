@@ -4,14 +4,14 @@
         <form @submit.prevent="submitForm()">
             <div class="form-group mb-3">
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" v-model="author.nombre" :class="{ 'is-invalid': errors.nombre }" class="form-control" placeholder="Nombre" />
+                <input type="text" id="nombre" v-model="form.nombre" :class="{ 'is-invalid': errors.nombre }" class="form-control" placeholder="Nombre" />
                 <div v-if="errors.nombre" class="invalid-feedback">
                     {{ errors.nombre }}
                 </div>
             </div>
             <div class="form-group mb-3">
                 <label for="biografia">Biografia:</label>
-                <textarea type="text" id="biografia" v-model="author.biografia" style="height: 150px" :class="{ 'is-invalid': errors.biografia }" class="form-control" placeholder="Biografia"></textarea>
+                <textarea type="text" id="biografia" v-model="form.biografia" style="height: 150px" :class="{ 'is-invalid': errors.biografia }" class="form-control" placeholder="Biografia"></textarea>
                 <div v-if="errors.biografia" class="invalid-feedback">
                     {{ errors.biografia }}
                 </div>
@@ -54,7 +54,7 @@ export default {
 
         guardar() {
             const vm = this;
-            this.axios.patch(this.baseUrl + '/authors/' + this.author.id, this.author)
+            this.axios.patch(this.baseUrl + '/authors/' + this.author.id, this.form)
                 .then(function (response) {
                     if (response.status === 200) {
                         vm.$emit('on-update', response.data);

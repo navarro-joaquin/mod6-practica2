@@ -71,7 +71,6 @@ export default {
             const vm = this;
             this.axios.get(this.baseUrl + '/authors?q=' + this.textoSearch)
                 .then(function (response) {
-                    // console.log(response);
                     vm.authors = response.data
                 })
                 .catch(function (error) {

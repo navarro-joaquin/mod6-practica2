@@ -4,7 +4,7 @@
         <form @submit.prevent="submitForm()">
             <div class="form-group mb-3">
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" v-model="genre.nombre" :class="{ 'is-invalid': errors.nombre }" class="form-control" placeholder="Nombre" />
+                <input type="text" id="nombre" v-model="form.nombre" :class="{ 'is-invalid': errors.nombre }" class="form-control" placeholder="Nombre" />
                 <div v-if="errors.nombre" class="invalid-feedback">
                     {{ errors.nombre }}
                 </div>
@@ -43,7 +43,7 @@ export default {
 
         guardar() {
             const vm = this;
-            this.axios.patch(this.baseUrl + '/genres/' + this.genre.id, this.genre)
+            this.axios.patch(this.baseUrl + '/genres/' + this.genre.id, this.form)
                 .then(function (response) {
                     if (response.status === 200) {
                         vm.$emit('on-update', response.data);

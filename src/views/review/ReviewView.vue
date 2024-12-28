@@ -3,16 +3,13 @@
         <RegisterReviewView @on-register="onRegister($event)" />
     </Modal>
     <Modal v-model:modelValue="showModalEdit">
-        <EditReviewView :book="bookToEdit" @on-update="onUpdate($event)" />
+        <EditReviewView :review="reviewToEdit" @on-update="onUpdate($event)" />
     </Modal>
     <div class="card">
         <div class="card-body">
             <h2>Lista de Reseñas</h2>
             <div class="row">
-                <!-- <div class="col-10">
-                    <input class="form-control mb-2" type="search" style="float: right;" v-model="textoSearch" @search="buscar()" placeholder="Buscar por calificación">
-                </div> -->
-                <div class="col-2">
+                <div class="offset-10 col-2">
                     <button type="button" class="btn btn-success mb-2" @click="showModalNuevo = true"><i class="bi bi-plus"></i> Nuevo registro</button>
                 </div>
             </div>
@@ -20,7 +17,7 @@
                 <h4>Filtros</h4>
                 <form @submit.prevent="filtrar()">
                         <div class="row">
-                            <div class="col-4 mb-3">
+                            <div class="col-4 offset-4 mb-3">
                                 <label for="libro">Libro:</label>
                                 <select name="libro" id="libro" class="form-select" v-model="filtro.bookId">
                                     <option value="">Todos</option>

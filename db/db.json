@@ -14,7 +14,7 @@
   "genres": [
     {
       "id": 1,
-      "nombre": "Aventura"
+      "nombre": "Aventuras"
     },
     {
       "id": 2,
@@ -43,15 +43,15 @@
       "titulo": "Percy Jackson y el ladron del rayo",
       "publicacion": 2005,
       "authorId": 1,
-      "genreId": 1,
+      "genreId": 4,
       "author": {
         "id": 1,
         "nombre": "Rick Riordan",
         "biografia": "Rick Riordan es un escritor estadounidense, conocido principalmente por sus series de libros de fantasia para jovenes. Nacio el 5 de junio de 1964 en San Antonio, Texas. Antes de dedicarse a la escritura, Riordan fue maestro de literatura y escritura en secundaria, lo que le permitio desarrollar un estilo accesible y entretenido para los jovenes lectores."
       },
       "genre": {
-        "id": 2,
-        "nombre": "Accion"
+        "id": 1,
+        "nombre": "Aventura"
       }
     },
     {
@@ -130,7 +130,14 @@
       "id": 1,
       "texto": "Ciudad del fuego celestial (City of Heavenly Fire) es una conclusion epica y llena de emociones para la serie Cazadores de sombras: Los instrumentos mortales. Cassandra Clare logra un final satisfactorio, resolviendo grandes conflictos y brindando a los personajes un cierre adecuado a sus arcos narrativos, mientras mantiene el suspenso y las sorpresas hasta el ultimo momento. La batalla final contra el malvado Jonathan Morgenstern es impresionante, y las decisiones dificiles que enfrentan los protagonistas sumergen al lector en una montaña rusa emocional. El libro tambien profundiza en los temas de sacrificio, amor incondicional, y la lucha entre el bien y el mal, con un tono mas maduro que el de sus predecesores.",
       "calificacion": 10,
-      "bookId": 11
+      "bookId": 11,
+      "book": {
+        "id": 11,
+        "titulo": "Ciudad del fuego celestial",
+        "publicacion": 2014,
+        "authorId": 2,
+        "genreId": 6
+      }
     },
     {
       "id": 2,
