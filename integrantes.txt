@@ -1,0 +1,16 @@
+Practica2 Vue3
+Nombre(s) de integrante(s):
+- Alvaro Joaquin Navarro Cors
+
+Pasos para iniciar el proyecto
+1) Instalar json-server (si no lo tienes instalado)
+npm install -g json-server@0.17.4
+
+2) Instalar las dependencias del proyecto
+npm install
+
+3) Iniciar el servidor de json-server
+json-server db/db.json --port=4000
+
+4) Iniciar el proyecto
+npm run serve

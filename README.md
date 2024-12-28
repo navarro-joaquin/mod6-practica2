@@ -1,16 +1,30 @@
-# practica2
+# practica2 - Modulo 6 (Vue)
 
-## Project setup
+> Created by [Alvaro Joaquin Navarro Cors](https://github.com/navarro-joaquin)
+
+## Instrucciones
+
+### Instalar json-server (si no lo tienes instalado)
+```
+npm install -g json-server@0.17.4
+```
+
+### Instalar las dependencias del proyecto
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Iniciar el servidor de json-server
+```
+json-server db/db.json --port=4000
+```
+
+### Iniciar el proyecto
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Build para produccion
 ```
 npm run build
 ```
